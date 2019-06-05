@@ -14,7 +14,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.next();
 
-        BurrowsWheelerTransform bwt = new BurrowsWheelerTransform(string);
+        BurrowsWheelerTransform bwt = new BurrowsWheelerTransform();
+        bwt.setInputStr(string);
 
         System.out.println("here is the transform: " + bwt.getEncodedOutput());
 

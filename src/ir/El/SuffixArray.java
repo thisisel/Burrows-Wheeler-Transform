@@ -110,7 +110,7 @@ public class SuffixArray {
      * O(str.length()). 1 loop str.length() times.
      *
      * @param str   input string
-     * @param order
+     * @param order attained from sortCharIndex(String str)
      * @return an array of class equivalences classEquivalence
      */
     private int[] computeCharClass(String str, int[] order) {
@@ -131,15 +131,6 @@ public class SuffixArray {
          * by iterating through order we can keep track of distinct integers
          * by comparing the present characters with the previous one.
          */
-        /*
-        the following for loop does not update the classes for each letter properly.
-        because once c is incremented, there is no going back
-        for (int i = 1; i < str.length(); i++ ){
-            int c = 1;
-            if(str.charAt(order[i]) != str.charAt(order[i-1]))
-                c++;
-            classEquivalence[order[i]] = c;
-        }*/
         for (int i = 1; i < str.length(); i++) {
 
             if (str.charAt(order[i]) != str.charAt(order[i - 1]))

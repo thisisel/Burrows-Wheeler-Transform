@@ -4,11 +4,9 @@ package ir.El;
 public class BurrowsWheelerTransform {
     private String inputStr;
     private StringBuilder encodedOutput = new StringBuilder();
-    private StringBuilder decodedOutPut = new StringBuilder();
+    private char[] decodedOutPut;
 
-    public BurrowsWheelerTransform(String inputStr) {
-        this.inputStr = inputStr;
-    }
+    public BurrowsWheelerTransform(){}
 
     public void setInputStr(String inputStr) {
         this.inputStr = inputStr;
@@ -18,7 +16,7 @@ public class BurrowsWheelerTransform {
         return encode();
     }
 
-    public StringBuilder getDecodedOutPut() {
+    public char[] getDecodedOutPut() {
         return decodedOutPut;
     }
 
