@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae098885-1c1c-42af-b198-8f95e665d29b" name="Default Changelist" comment="refactored some variable name">
+    <list default="true" id="ae098885-1c1c-42af-b198-8f95e665d29b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bwt encoder via suffix array/ir/El/BurrowsWheelerTransform.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bwt encoder via suffix array/ir/El/BurrowsWheelerTransform.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bwt encoder via suffix array/ir/El/SuffixArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bwt encoder via suffix array/ir/El/SuffixArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/El/BurrowsWheelerTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/El/BurrowsWheelerTransform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/El/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/El/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ir/El/SuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/El/SuffixArray.java" afterDir="false" />
@@ -18,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ir/El/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="368">
+              <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
               <folding>
                 <element signature="e#107#108#0" expanded="true" />
                 <element signature="e#139#140#0" expanded="true" />
@@ -31,16 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ir/El/BurrowsWheelerTransform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="68">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="method#encode#0;class#BurrowsWheelerTransform#0" />
+                <element signature="e#537#597#1" />
               </folding>
             </state>
           </provider>
@@ -49,17 +51,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ir/El/SuffixArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="117">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#141#142#0" expanded="true" />
                 <element signature="e#177#178#0" expanded="true" />
+                <element signature="method#getSuffixArray#0;class#SuffixArray#0" />
+                <element signature="method#getClassEquivalence#0;class#SuffixArray#0" />
                 <element signature="docComment;method#buildSuffixArray#0;class#SuffixArray#0" />
                 <element signature="method#buildSuffixArray#0;class#SuffixArray#0" />
                 <element signature="docComment;method#sortCharIndex#0;class#SuffixArray#0" />
                 <element signature="method#sortCharIndex#0;class#SuffixArray#0" />
                 <element signature="docComment;method#computeCharClass#0;class#SuffixArray#0" />
-                <element signature="method#computeCharClass#0;class#SuffixArray#0" />
                 <element signature="docComment;method#sortDoubledCyclicShift#0;class#SuffixArray#0" />
                 <element signature="method#sortDoubledCyclicShift#0;class#SuffixArray#0" />
                 <element signature="docComment;method#updateClasses#0;class#SuffixArray#0" />
@@ -85,8 +88,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ir/El/SuffixArray.java" />
-        <option value="$PROJECT_DIR$/src/ir/El/Main.java" />
         <option value="$PROJECT_DIR$/src/ir/El/BurrowsWheelerTransform.java" />
+        <option value="$PROJECT_DIR$/src/ir/El/Main.java" />
       </list>
     </option>
   </component>
@@ -104,10 +107,14 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559757052416" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bwt decoder" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561579928380" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../draft for ds" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -153,12 +160,21 @@
       <workItem from="1559496825184" duration="669000" />
       <workItem from="1559690500674" duration="662000" />
       <workItem from="1559691315586" duration="3186000" />
-      <workItem from="1559755480151" duration="1560000" />
+      <workItem from="1559755480151" duration="1937000" />
+      <workItem from="1561548543860" duration="7228000" />
     </task>
+    <task id="LOCAL-00001" summary="refactored some variable name">
+      <created>1559757101709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559757101709</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9158000" />
+    <option name="totallyTimeSpent" value="16763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1482" height="877" extended-state="6" />
@@ -173,17 +189,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32931727" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32931727" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32931727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -198,6 +214,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactored some variable name" />
     <option name="LAST_COMMIT_MESSAGE" value="refactored some variable name" />
@@ -205,17 +231,18 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ir/El/SuffixArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="117">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#141#142#0" expanded="true" />
             <element signature="e#177#178#0" expanded="true" />
+            <element signature="method#getSuffixArray#0;class#SuffixArray#0" />
+            <element signature="method#getClassEquivalence#0;class#SuffixArray#0" />
             <element signature="docComment;method#buildSuffixArray#0;class#SuffixArray#0" />
             <element signature="method#buildSuffixArray#0;class#SuffixArray#0" />
             <element signature="docComment;method#sortCharIndex#0;class#SuffixArray#0" />
             <element signature="method#sortCharIndex#0;class#SuffixArray#0" />
             <element signature="docComment;method#computeCharClass#0;class#SuffixArray#0" />
-            <element signature="method#computeCharClass#0;class#SuffixArray#0" />
             <element signature="docComment;method#sortDoubledCyclicShift#0;class#SuffixArray#0" />
             <element signature="method#sortDoubledCyclicShift#0;class#SuffixArray#0" />
             <element signature="docComment;method#updateClasses#0;class#SuffixArray#0" />
@@ -224,26 +251,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ir/El/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/ir/El/BurrowsWheelerTransform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
-            <element signature="e#107#108#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="method#encode#0;class#BurrowsWheelerTransform#0" />
+            <element signature="e#537#597#1" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ir/El/BurrowsWheelerTransform.java">
+    <entry file="file://$PROJECT_DIR$/src/ir/El/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="368">
+          <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
           <folding>
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
