@@ -4,11 +4,10 @@ public class SuffixArray {
 
     private String string;
     private int[] suffixArray;
-    private int[] classEquivalence;
 
 
     public SuffixArray(String string) {
-        this.string = string;
+        setString(string);
     }
 
     public void setString(String string) {
@@ -40,6 +39,7 @@ public class SuffixArray {
      * @return ordered suffix indexes
      */
     private int[] buildSuffixArray(String str) {
+
         if (str.equals(null))
             System.out.println("null input");
 
@@ -52,8 +52,10 @@ public class SuffixArray {
             classEquivalence = updateClasses(order, classEquivalence, length);
             length *= 2;
         }
+
         return order;
     }
+
 
     /**
      * cyclic shift of length 1
@@ -64,6 +66,7 @@ public class SuffixArray {
      * @return ordered input indices.
      */
     private int[] sortCharIndex(String str) {
+
         /*
          * order: the indexes of sorted characters of the string.
          * sorted indexes wil be used for class computation
@@ -76,12 +79,14 @@ public class SuffixArray {
         if (str == null)
             return null;
 
+
         /*
          * initializing with 0 to avoid null
          */
         for (int i = 0; i < count.length; i++) {
             count[i] = 0;
         }
+
 
         /*
          * Each alphabet has its own uniq place in count[].
@@ -91,6 +96,8 @@ public class SuffixArray {
         for (int i = 0; i < str.length(); i++) {
             count[str.charAt(i)]++;
         }
+
+
         /*
          * computing the number of occurrences up to j(inclusive) as sumCount.
          * no index is available before count[0], thus nothing is added to count[0].
@@ -98,6 +105,8 @@ public class SuffixArray {
         for (int j = 1; j <= 255; j++) {
             count[j] += count[j - 1];
         }
+
+
         /*
          * iterating in descending manner to preserve the stability of the algorithm
          * count[c]=n indicates that c is the nth character in the string and there are n-1
@@ -110,6 +119,7 @@ public class SuffixArray {
 
         return order;
     }
+
 
     /**
      * computing equivalence classes just for L=1 cyclic shift
@@ -130,6 +140,7 @@ public class SuffixArray {
          */
         classEquivalence[order[0]] = 0;
         int maxClass = 0;
+
 
         /*
          * classEquivalence is equal to the original string
@@ -165,6 +176,7 @@ public class SuffixArray {
      * @param classEquivalence
      */
     private int[] sortDoubledCyclicShift(String str, int length, int[] order, int[] classEquivalence) {
+
         int[] count = new int[str.length()];
         for (int i = 0; i < str.length(); i++) {
             count[i] = 0;
@@ -175,6 +187,7 @@ public class SuffixArray {
         for (int i = 0; i < str.length(); i++) {
             count[classEquivalence[i]]++;
         }
+
         for (int j = 1; j < str.length(); j++) {
             count[j] += count[j - 1];
         }
@@ -187,8 +200,10 @@ public class SuffixArray {
             count[cl]--;
             newOrder[count[cl]] = start;
         }
+
         return newOrder;
     }
+
 
     /**
      * @param newOrder
@@ -197,6 +212,7 @@ public class SuffixArray {
      * @return
      */
     private int[] updateClasses(int[] newOrder, int[] classEquivalence, int length) {
+
         int n = newOrder.length;
         int[] newClass = new int[n];//equal to the length of string and classEquivalence
 
@@ -222,6 +238,7 @@ public class SuffixArray {
             } else
                 newClass[currentFirstHalf] = newClass[previousFirstHalf];
         }
+
         return newClass;
     }
 }

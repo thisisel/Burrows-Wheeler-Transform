@@ -19,6 +19,7 @@ public class BurrowsWheelerTransform {
     }
 
     private StringBuilder encode() {
+
         StringBuilder encodedOutput = new StringBuilder();
 
         if (inputStr.equals(null)) {
@@ -32,18 +33,25 @@ public class BurrowsWheelerTransform {
             if (suffixArray[i] == 0)
                 encodedOutput.append("$");
         }
+
         return encodedOutput;
     }
 
     private char[] decode(String encodedStr) {
+
         int[] classEquivalence = new SuffixArray(encodedStr).getClassEquivalence();//last column contains class eq
         int strLength = encodedStr.length();
         int distinctLetters = classEquivalence[strLength] + 1;//distinctLetters =< strLength
         char[] decodedStr = new char[strLength];
 
-        int[] count = new int[distinctLetters]; //k
-        int[] firstOccurrence = new int[distinctLetters];//M
-        int[] rank = new int[strLength];//C
+        /*  K = Frequency of each character   */
+        int[] count = new int[distinctLetters];
+
+        /* M = indexes pointing to the first occurrence of each character in F column  */
+        int[] firstOccurrence = new int[distinctLetters];
+
+        /*  C = rank in the L column  */
+        int[] rank = new int[strLength];
 
         for (int i = 0; i < distinctLetters; i++) {
             count[i] = 0;

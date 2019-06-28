@@ -9,6 +9,7 @@ public class Main {
     }
 
     private void run() {
+
         /*     encode      */
         System.out.println("enter your string to be encoded: ");
 
@@ -19,6 +20,7 @@ public class Main {
         bwt.setInputStr(string);
 
         System.out.println("here is the transform: " + bwt.getEncodedOutput());
+
 
         /*     decode      */
         System.out.println("enter your string to be decoded: ");
